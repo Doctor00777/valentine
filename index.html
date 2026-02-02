@@ -79,6 +79,19 @@
             p { font-size: 16px; }
             button { font-size: 16px; }
         }
+        .heart {
+    width: 160px;
+    margin: 20px auto;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
     </style>
 </head>
 
@@ -89,7 +102,7 @@
     <p>Will you be my Valentine? 🥺💖</p>
 
     <!-- Teddy -->
-    <img src="https://i.imgur.com/4AiXzf8.png" alt="Teddy Bear">
+   <img class="heart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Heart_symbol_red.svg/512px-Heart_symbol_red.svg.png" alt="Red Heart">
 
     <div class="buttons">
         <button id="yes" onclick="yesClicked()">Yes 💖</button>
@@ -141,3 +154,4 @@
 
 </body>
 </html>
+
